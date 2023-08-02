@@ -102,7 +102,7 @@ class AuthController {
 
         // Render a la vista
         $router->render('auth/registro', [
-            'titulo' => 'Crea tu cuenta en DevWebcamp',
+            'titulo' => 'Crea tu cuenta en StudentWebcamp',
             'usuario' => $usuario, 
             'alertas' => $alertas
         ]);
@@ -148,7 +148,7 @@ class AuthController {
 
         // Muestra la vista
         $router->render('auth/olvide', [
-            'titulo' => 'Olvide mi Password',
+            'titulo' => 'Olvide mi contraseña',
             'alertas' => $alertas
         ]);
     }
@@ -199,7 +199,7 @@ class AuthController {
         
         // Muestra la vista
         $router->render('auth/reestablecer', [
-            'titulo' => 'Reestablecer Password',
+            'titulo' => 'Reestablecer contraseña',
             'alertas' => $alertas,
             'token_valido' => $token_valido
         ]);
@@ -239,7 +239,7 @@ class AuthController {
      
 
         $router->render('auth/confirmar', [
-            'titulo' => 'Confirma tu cuenta DevWebcamp',
+            'titulo' => 'Confirma tu cuenta StudentWebcamp',
             'alertas' => Usuario::getAlertas()
         ]);
     }
